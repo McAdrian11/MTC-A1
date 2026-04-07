@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 20px;
 }
 
@@ -31,6 +31,12 @@ h1 {
 
 h1 span {
   color: #ffa502;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 /* =========================

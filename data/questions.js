@@ -1975,7 +1975,7 @@ const questions = [
   // Pregunta 158
   {
     question:
-      "Es una obligación general de tránsito que, los ________, las instrucciones de los Efectivos de la Policía de Tránsito y el mandato de las normas legales y reglamentarias correspondientes.",
+      "Es una obligación general de tránsito que, los ________ circulen respetando los mensajes de ________, las instrucciones de los Efectivos de la Policía de Tránsito y el mandato de las normas legales y reglamentarias correspondientes.",
     options: [
       "Peatones - los letreros instalados en las vías públicas.",
       "Los usuarios de la vía pública - los dispositivos de control de tránsito.",

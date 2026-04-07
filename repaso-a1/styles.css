@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 40px 15px;
 }
 
@@ -30,6 +30,12 @@ h1 {
 
 h1 span {
   color: #ffa502;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 /* =========================
@@ -125,8 +131,62 @@ h1 span {
   text-align: left;
 }
 
-#options button:hover {
+/* HOVER SOLO SI NO ESTÁ BLOQUEADO */
+#options button:not(.locked):hover {
   background: #4c5a6d;
+}
+
+/* =========================
+   RESPUESTAS
+========================= */
+
+/* CORRECTA */
+#options button.correct {
+  background: #22c55e !important;
+  color: black !important;
+}
+
+/* INCORRECTA */
+#options button.wrong {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+/* EVITAR QUE HOVER PISE LOS COLORES */
+#options button.correct:hover,
+#options button.wrong:hover {
+  background: inherit;
+}
+
+/* BLOQUEADO (después de responder) */
+#options button.locked {
+  cursor: default;
+}
+
+/* =========================
+   BOTÓN FINAL
+========================= */
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #ffa502;
+  color: #2c3440;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#restart-btn:hover {
+  background: #ffbe33;
+  transform: scale(1.05);
+}
+
+#restart-btn:active {
+  transform: scale(0.98);
 }
 
 /* =========================

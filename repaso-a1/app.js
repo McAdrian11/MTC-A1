@@ -87,8 +87,10 @@ function render() {
           } else {
             // fin (sin pantalla de resultados)
             document.getElementById("question").innerHTML = `
-  🎉 Práctica terminada <br><br>
-  <button onclick="location.reload()">Volver a empezar</button>
+<div class="end-box">
+  <h2>🎉 Práctica terminada</h2>
+  <button id="restart-btn" onclick="location.reload()">Volver a empezar</button>
+</div>
 `;
 
             document.getElementById("options").innerHTML = "";
